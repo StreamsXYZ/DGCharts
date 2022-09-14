@@ -12,18 +12,18 @@ let package = Package(
     products: [
         .library(
             name: "DGCharts",
-            targets: ["Charts"]),
+            targets: ["DGCharts"]),
         .library(
             name: "ChartsDynamic",
             type: .dynamic,
-            targets: ["Charts"])
+            targets: ["DGCharts"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0")
     ],
     targets: [
         .target(
-            name: "Charts",
+            name: "DGCharts",
             dependencies: [.product(name: "Algorithms", package: "swift-algorithms")]
         )
     ],
